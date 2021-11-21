@@ -4,9 +4,6 @@
 {
     "distutils": {
         "depends": [],
-        "libraries": [
-            "m"
-        ],
         "name": "catoi",
         "sources": [
             "catoi.pyx"
@@ -1047,6 +1044,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 /* Module declarations from 'libc.stdlib' */
 
 /* Module declarations from 'catoi' */
+static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *, int __pyx_skip_dispatch); /*proto*/
 #define __Pyx_MODULE_NAME "catoi"
 extern int __pyx_module_is_main_catoi;
 int __pyx_module_is_main_catoi = 0;
@@ -1062,17 +1060,19 @@ static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_name;
 static PyObject *__pyx_n_s_test;
+static PyObject *__pyx_pf_5catoi_parse_charptr_to_pyint(CYTHON_UNUSED PyObject *__pyx_self, char *__pyx_v_s); /* proto */
 /* Late includes */
 
 /* "catoi.pyx":3
  * from libc.stdlib cimport atoi
  * 
- * cdef parse_charptr_to_pyint(char* s):             # <<<<<<<<<<<<<<
+ * cpdef parse_charptr_to_pyint(char* s):             # <<<<<<<<<<<<<<
  *     assert s is not NULL, "byte string value should not be NULL"
  *     return atoi(s)
  */
 
-static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s) {
+static PyObject *__pyx_pw_5catoi_1parse_charptr_to_pyint(PyObject *__pyx_self, PyObject *__pyx_arg_s); /*proto*/
+static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s, CYTHON_UNUSED int __pyx_skip_dispatch) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1083,7 +1083,7 @@ static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s) {
 
   /* "catoi.pyx":4
  * 
- * cdef parse_charptr_to_pyint(char* s):
+ * cpdef parse_charptr_to_pyint(char* s):
  *     assert s is not NULL, "byte string value should not be NULL"             # <<<<<<<<<<<<<<
  *     return atoi(s)
  */
@@ -1097,7 +1097,7 @@ static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s) {
   #endif
 
   /* "catoi.pyx":5
- * cdef parse_charptr_to_pyint(char* s):
+ * cpdef parse_charptr_to_pyint(char* s):
  *     assert s is not NULL, "byte string value should not be NULL"
  *     return atoi(s)             # <<<<<<<<<<<<<<
  */
@@ -1111,7 +1111,7 @@ static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s) {
   /* "catoi.pyx":3
  * from libc.stdlib cimport atoi
  * 
- * cdef parse_charptr_to_pyint(char* s):             # <<<<<<<<<<<<<<
+ * cpdef parse_charptr_to_pyint(char* s):             # <<<<<<<<<<<<<<
  *     assert s is not NULL, "byte string value should not be NULL"
  *     return atoi(s)
  */
@@ -1127,7 +1127,60 @@ static PyObject *__pyx_f_5catoi_parse_charptr_to_pyint(char *__pyx_v_s) {
   return __pyx_r;
 }
 
+/* Python wrapper */
+static PyObject *__pyx_pw_5catoi_1parse_charptr_to_pyint(PyObject *__pyx_self, PyObject *__pyx_arg_s); /*proto*/
+static PyObject *__pyx_pw_5catoi_1parse_charptr_to_pyint(PyObject *__pyx_self, PyObject *__pyx_arg_s) {
+  char *__pyx_v_s;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("parse_charptr_to_pyint (wrapper)", 0);
+  assert(__pyx_arg_s); {
+    __pyx_v_s = __Pyx_PyObject_AsWritableString(__pyx_arg_s); if (unlikely((!__pyx_v_s) && PyErr_Occurred())) __PYX_ERR(0, 3, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("catoi.parse_charptr_to_pyint", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_5catoi_parse_charptr_to_pyint(__pyx_self, ((char *)__pyx_v_s));
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_5catoi_parse_charptr_to_pyint(CYTHON_UNUSED PyObject *__pyx_self, char *__pyx_v_s) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  PyObject *__pyx_t_1 = NULL;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("parse_charptr_to_pyint", 0);
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_1 = __pyx_f_5catoi_parse_charptr_to_pyint(__pyx_v_s, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_r = __pyx_t_1;
+  __pyx_t_1 = 0;
+  goto __pyx_L0;
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_1);
+  __Pyx_AddTraceback("catoi.parse_charptr_to_pyint", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
 static PyMethodDef __pyx_methods[] = {
+  {"parse_charptr_to_pyint", (PyCFunction)__pyx_pw_5catoi_1parse_charptr_to_pyint, METH_O, 0},
   {0, 0, 0, 0}
 };
 
@@ -1465,7 +1518,7 @@ if (!__Pyx_RefNanny) {
   /* "catoi.pyx":1
  * from libc.stdlib cimport atoi             # <<<<<<<<<<<<<<
  * 
- * cdef parse_charptr_to_pyint(char* s):
+ * cpdef parse_charptr_to_pyint(char* s):
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
